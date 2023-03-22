@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #DDFFE7; */
+}
+
+nav a.active {
+  color: #fff;
+  background: #42a5f5;
+}
+
+nav a.inactive {
+  font-style: italic;
+}
+
+.sidebar {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ddffe7;
+}
+
+.route {
+  width: 80vw;
+  height: 100vh;
+  border-radius: 20px;
+  overflow-y: scroll;
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.image {
+  width: 100%;
+  height: 90vh;
+}
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+Button {
+  width: 20%;
+}
