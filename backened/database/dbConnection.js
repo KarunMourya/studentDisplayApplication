@@ -11,7 +11,7 @@ const dbConnection = async (sequelize) => {
   try {
     await sequelize.authenticate();
     console.log("Successfully authenticate");
-    await sequelize.sync();    
+    await sequelize.sync({force:true});    
     console.log("Successfully sync");
   } catch (error) {
     console.log("CONNECTION ISSUE")
